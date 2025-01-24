@@ -1,0 +1,32 @@
+/* Input.module.css */
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-field {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.input-password {
+  background-color: #f8f8f8; /* Estilo específico para inputs de contraseña */
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+  color: #007bff;
+}
+
+/* Estilos adicionales para el contenedor cuando es password */
+.password-container {
+  background-color: #f0f0f0;  /* Fondo diferente cuando es password */
+}
