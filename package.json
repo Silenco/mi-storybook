@@ -5,8 +5,10 @@
   "scripts": {
     "test": "jest",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "deploy": "gh-pages -d storybook-static"
   },
+  "homepage": "https://silenco.github.io/mi-storybook",
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -56,6 +58,7 @@
     "@testing-library/user-event": "^14.6.1",
     "babel-loader": "^9.2.1",
     "css-loader": "^7.1.2",
+    "gh-pages": "^6.3.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
