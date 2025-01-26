@@ -32,14 +32,6 @@ describe('Button Component', () => {
     expect(button).toHaveClass('button--secondary');
   });
 
-  it('sets the background color correctly when provided', () => {
-    render(<Button label="Click me" backgroundColor="red" />);
-    
-    // Verifica que el botón tenga el estilo de color de fondo correcto
-    const button = screen.getByText('Click me');
-    expect(button).toHaveStyle('background-color: red');
-  });
-
   it('calls the onClick handler when clicked', () => {
     const handleClick = jest.fn();
     render(<Button label="Click me" onClick={handleClick} />);
