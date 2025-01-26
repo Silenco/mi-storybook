@@ -1,0 +1,35 @@
+:root {
+  --font-family: 'Roboto sans-serif';
+
+  --button-primary-bg-light: #422291; /* Fondo del botón en tema claro */
+  --button-primary-text-color-light: #ffffff; /* Color del texto en tema claro */
+  --button-primary-border-light: #422291; /* Borde del botón en tema claro */
+
+  --button-secondary-bg-light: #ffffff; /* Fondo del botón en tema claro */
+  --button-secondary-text-color-light: #422291; /* Color del texto en tema claro */
+  --button-secondary-border-light: #422291; /* Borde del botón en tema claro */
+
+  --button-bg-dark: #333333; /* Fondo del botón en tema oscuro */
+  --button-text-dark: #ffffff; /* Color del texto en tema oscuro */
+  --button-border-dark: #333333; /* Borde del botón en tema oscuro */
+  --text-color-dark: #f5f5f5; /* Color de texto en tema oscuro */
+}
+
+/* Tema claro */
+.theme-light {
+  --button-primary-bg: var(--button-primary-bg-light);
+  --button-primary-text-color: var(--button-primary-text-color-light);
+  --button--primary-border: var(--button-primary-border-light);
+
+  --button-secondary-bg: var(--button-secondary-bg-light);
+  --button-secondary-text-color: var(--button-secondary-text-color-light);
+  --button--secondary-border: var(--button-secondary-border-light);
+}
+
+/* Tema oscuro */
+.theme-dark {
+  --button-bg: var(--button-bg-dark);
+  --button-text: var(--button-text-dark);
+  --button-border: var(--button-border-dark);
+  --text-color: var(--text-color-dark);
+}

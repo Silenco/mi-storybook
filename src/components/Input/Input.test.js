@@ -1,7 +1,7 @@
 // Input.test.js
 import React from 'react'; // Agrega esta importación
 import { render, screen, fireEvent } from '@testing-library/react';
-import Input from './Input';
+import {Input} from './Input';
 
 describe('Input component', () => {
   it('renders the input with the correct placeholder', () => {
@@ -14,15 +14,15 @@ describe('Input component', () => {
     render(<Input placeholder="Password" value="" onChange={() => {}} isPassword={true} />);
     
     const input = screen.getByPlaceholderText('Password');
-    const button = screen.getByText('Show');
-
+    const button = screen.getByRole('button', { name: 'Show password' });
+  
     // Inicialmente el tipo debería ser "password"
     expect(input.type).toBe('password');
-
+  
     // Al hacer clic en el botón, el tipo debería cambiar a "text"
     fireEvent.click(button);
     expect(input.type).toBe('text');
-
+  
     // Al hacer clic nuevamente, debería volver a "password"
     fireEvent.click(button);
     expect(input.type).toBe('password');

@@ -1,0 +1,48 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 16px; /* Default font size */
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  body {
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  button {
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+  }
+  
+  input, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+  }
+  
+  code {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--color-light);
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+  }
+  
+  

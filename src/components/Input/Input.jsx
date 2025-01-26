@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx'; // Importamos clsx
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import styles from './Input.module.css'; // Importamos los estilos de CSS Modules
 
 export const Input = ({ type, placeholder, value, onChange, isPassword, ...props }) => {
@@ -28,8 +30,9 @@ export const Input = ({ type, placeholder, value, onChange, isPassword, ...props
           type="button"
           className={styles['toggle-password']}
           onClick={togglePasswordVisibility}
+          aria-label={showPassword ? 'Hide password' : 'Show password'}
         >
-          {showPassword ? 'Hide' : 'Show'}
+          {showPassword ?  (<VisibilityOffIcon />) : (<VisibilityIcon />)}
         </button>
       )}
     </div>
